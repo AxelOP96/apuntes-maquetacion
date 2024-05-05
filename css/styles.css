@@ -8,6 +8,24 @@ body{
     background-color: #f8b5b5;
     color: #882e58;
 }
+.header{
+    background-color: #882e58;
+    color: #f8b5b5;
+    height: 100px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    padding: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #e668a3;
+}
 .container{
     margin: 20px auto;
     width: 80%;
@@ -32,6 +50,12 @@ body{
 }
 .icon-large{
     max-width: 400px;
+}
+img{
+    max-width: 600px;
+}
+.text{
+    margin: 10px 0;
 }
 .tag{
     display: inline-block;
