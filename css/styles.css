@@ -9,20 +9,30 @@ body{
     color: #882e58;
 }
 .header{
+    display: flex;
+    flex-direction: column;
     background-color: #882e58;
     color: #f8b5b5;
-    height: 100px;
+    height: 200px;
+}
+.courses ul{
+    display: flex;
+    justify-content: space-between;
 }
 .nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.nav ul li{
+.nav ul li, .courses ul li{
     list-style: none;
     padding: 30px;
 }
-.nav ul li a{
+.nav ul li:hover, .courses ul li:hover{
+    background-color: #e668a3;
+    color: #882e58;
+}
+.nav ul li a, .courses ul li a{
     text-decoration: none;
     color: #e668a3;
 }
