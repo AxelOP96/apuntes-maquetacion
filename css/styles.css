@@ -28,13 +28,20 @@ body{
     list-style: none;
     padding: 30px;
 }
-.nav ul li:hover, .courses ul li:hover{
+.nav ul li:active,
+.nav ul li:hover,
+.courses ul li:hover{
     background-color: #e668a3;
     color: #882e58;
+
 }
 .nav ul li a, .courses ul li a{
     text-decoration: none;
     color: #e668a3;
+}
+.nav ul li a:active,
+.nav ul li a:hover{
+    text-shadow: #211f20;
 }
 .container{
     margin: 20px auto;
