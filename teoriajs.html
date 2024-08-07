@@ -23,7 +23,7 @@
         <nav class="nav"><ul>
             <li><a href="js.html">Home</a></li>
             <li><a href="#">Teoría</a></li>
-            <li><a href="#">Ejercicios Prácticos</a></li>
+            <li><a href="practica/cotizador-base-hogar/index.html">Ejercicios Prácticos</a></li>
         </ul></nav>
     </header>
     <main class="container">
@@ -450,10 +450,184 @@
                 valor de la expresión, se ejecuta el bloque de
                 código correspondiente a ese caso.
                 </p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
+                <img src="./assets/jsteoria09.png" alt="">
+                <h4>Objetos DATE</h4>
+
+            <p class="meaning">La clase Date es un objeto que forma parte del
+Core JavaScript. Permite manipular fechas y
+horas en los desarrollos.
+Este objeto es instanciable. Esto significa que
+permite “crear múltiples copias” de ese objeto, de
+acuerdo a la necesidad de la aplicación.
+Al ser instanciable, la clase Date() puede ser
+utilizada para crear múltiples fechas y horas
+diferentes y, por ejemplo, calcular períodos de
+tiempo entre estas.</p>
+                <img src="./assets/jsteoria10.png" alt="">
+                <img src="./assets/jsteoria11.png" alt="">
+
+        </section>
+        <hr>
+        <section class="content">
+            <h2 class="subtitle">Modulo 3</h2>
+            <h3>Arrays</h3>
+            <p class="meaning">Los arrays, (también llamados arreglos o
+                colecciones) permiten definir, bajo una misma
+                estructura, una serie de valores útiles dentro de
+                nuestra aplicación.
+                En JS, se utilizan dos tipos de arrays:
+                ● Arrays de elementos.
+                ● Arrays de objetos.
+                Si bien es posible crear arrays que almacenan
+                diferentes tipos de datos, no es una práctica
+                común, dado que le agrega complejidad a la
+                aplicación, al momento de validar a qué tipo de
+                dato corresponde cada valor almacenado.</p>
+            <p class="meaning">Cada valor almacenado en un array, obtiene una posición
+                numérica, denominada índice. Esta posición numérica
+                inicia siempre a partir del valor 0 (cero), y se incrementa
+                en un dígito por cada nuevo valor contenido en el array.</p>
+                <img src="./assets/jsteoria12.png" alt="">
+                <img src="./assets/jsteoria13.png" alt="">
+                <img src="./assets/jsteoria14.png" alt="">
+            <p class="meaning">.push()
+                El método .push() agrega un nuevo elemento al final del
+                array. Este elemento se debe agregar dentro de los
+                paréntesis del método.</p>
+            <p class="meaning">.unshift()
+                El método .unshift() agrega un nuevo elemento al inicio
+                del array. Este elemento se debe agregar dentro de los
+                paréntesis del método.
+                </p>
+            <p class="meaning">.pop()
+                El método .pop() quita el último elemento del array.
+                No es necesario definir ningún parámetro, ya que su acción
+                es automática.</p>
+            <p class="meaning">.shift()
+                El método .shift() quita el primer elemento del array.
+                No es necesario definir ningún parámetro, ya que su acción
+                es automática.</p>
+            <p class="meaning">.slice()
+                El método .slice() (del inglés rebanar) crea un
+                nuevo array con elementos de un array
+                existente.
+                Recibe dos parámetros:
+                1. El primero, corresponde al índice del array
+                desde donde inicia el proceso mientras que,
+                2. el segundo parámetro, hasta qué índice debe
+                “rebanar”.
+                El método .slice() puede recibir solo un parámetro.
+Esta condición sólo debe aplicarse si se desea generar un
+nuevo array a partir de una posición determinada, hasta el
+final del array en cuestión.
+                </p>
+            <p class="meaning">.splice()
+                El método .splice() (del inglés: empalmar)
+                permite remover uno o más elementos
+                alojado(s) en cualquier posición del array.
+                Recibe dos parámetros:
+                1. En el primer parámetro, le indicamos el índice
+                del elemento a remover.
+                2. En el segundo, cuántos elementos
+                quitaremos.</p>
+                <p class="meaning">.indexOf()
+                    El método indexOf() permite identificar
+                    si un elemento existe o no dentro de un
+                    array. Si existe, nos retorna su índice
+                    actual; si no, retornará -1.
+                    Es una opción muy útil, que se puede
+                    aprovechar para identificar el índice de
+                    un elemento que deseamos quitar.
+                    </p>
+            <p class="meaning">.includes()
+                El método .includes() permite identificar si un elemento
+                existe dentro de un array, o no.
+                A diferencia de .indexOf(), .includes() retorna
+                solamente true, si existe, o false, si no existe.</p>
+            <p class="meaning">concat()
+                Este método permite concatenar dos arrays en
+                uno solo. En el siguiente ejemplo, se concatenan
+                el array llamado paisesAmericaDelSur con
+                paisesAmericaDelNorte para conformar un
+                nuevo array cuyo nombre es paisesAmerica.
+                De acuerdo al orden que deseamos para los
+                elementos en el array, es como debemos utilizar
+                los arrays a fusionar.</p>
+            <p class="meaning">.join()
+                El método .join() fusiona todos los elementos
+                de un array en una cadena de texto (string).
+                Entre los paréntesis, podemos definir un carácter
+                a usar para separar los elementos unos de otros.</p>
+            <p class="meaning">.sort()
+                El método .sort() ordena los elementos de un array de
+                forma ascendente.</p>
+            <p class="meaning">.reverse()
+                El método .reverse() invierte la posición de los
+                elementos de un array</p>
+                <h3>Objetos</h3>
+            <p class="meaning">Cada objeto tiene un estado y un comportamiento:
+                ● el estado es definido por sus atributos mientras que,
+                ● el comportamiento, se define por sus métodos.
+                Los objetos se relacionan entre sí a través de sus
+                mensajes y sus métodos y, su uso en el desarrollo de
+                software, permite clarificar de forma efectiva aquellas
+                tareas que definimos en cada línea de código que le da
+                vida a nuestra aplicación.</p>
+            <p class="meaning">Atributos y métodos
+                Cada objeto tiene un estado y un
+                comportamiento:
+                ● el estado es definido por sus atributos
+                mientras que,
+                ● el comportamiento, se define por sus
+                métodos.
+                Los objetos se relacionan entre sí a través de
+                sus mensajes y sus métodos y, su uso en el
+                desarrollo de software, permite clarificar de
+                forma efectiva aquellas tareas que definimos en
+                cada línea de código que le da vida a nuestra
+                aplicación.
+                </p>
+            <p class="meaning">Propiedades y métodos
+                Entonces:
+                ● Cada característica (o atributo) que
+                representa a estos objetos dentro del
+                ecosistema de software, suele llamarse
+                propiedad.
+                ● Cada comportamiento de estos objetos, es
+                representado por un método.</p>
+                <img src="./assets/jsteoria15.png" alt="">
+                <img src="./assets/jsteoria16.png" alt="">
+                <img src="./assets/jsteoria17.png" alt="">
+            <p class="meaning">Tanto los objetos, como ambos tipos de arrays,
+                se declaran siempre anteponiendo la palabra
+                reservada const, y no let.
+                Esta práctica permite evitar que se
+                sobre-escriba (nosotros mismos o algún
+                compañero de equipo) el contenido de un objeto
+                o array, en cualquier otra parte de nuestra
+                aplicación, con un valor diferente al que tiene. Es
+                una forma útil de proteger la estructura de
+                datos dinámica que usa JavaScript para
+                declarar espacios de memoria que almacenen
+                diferentes valores. </p>
+                <h3>For of</h3>
+                <img src="./assets/jsteoria18.png" alt="">
+            <p class="meaning">Funcionamiento
+                En cada iteración, le asigna el valor del
+                elemento actual a una variable, lo que hace que
+                sea más sencillo recorrer y trabajar con los
+                elementos de la estructura.
+                Este ciclo recorre de principio a fin el array y
+                valida de forma interna el total de elementos u
+                objetos que tenga el array.
+                También, ayuda a eliminar el uso de índice para
+                acceder a cada elemento u objeto del array.
+                Estas funcionalidades simplificadas lo
+                convierten en una alternativa al ciclo for
+                tradicional, mucho más atractiva, dado que
+                simplifica la sintaxis y mejora la legibilidad del
+                código.</p>
+                <img src="./assets/jsteoria19.png" alt="">
             <p class="meaning"></p>
             <p class="meaning"></p>
             <p class="meaning"></p>
