@@ -628,12 +628,164 @@ final del array en cuestión.
                 simplifica la sintaxis y mejora la legibilidad del
                 código.</p>
                 <img src="./assets/jsteoria19.png" alt="">
-            <p class="meaning"></p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
-            <p class="meaning"></p>
+
         </section>
+        <hr>
+        <section class="content">
+            <h2 class="subtitle">Modulo 4</h2>
+            <h3>HTML: Interacción</h3>
+            <p class="meaning">JavaScript cuenta con un objeto propio,
+                denominado document, que brinda una batería
+                importante de herramientas (métodos), para
+                poder acceder a elementos HTML, leer y/o
+                modificar su contenido, generar nuevos
+                elementos HTML, eliminar elementos HTML,
+                ocultar y mostrar, entre otras tantas
+                funcionalidades.
+                Para lograr esto de forma efectiva, se debe
+                configurar el archivo JS dentro del documento
+                HTML, con un atributo denominado defer</p>
+            <p class="meaning">Cuando se referencia el archivo JS dentro de un
+                documento HTML para que éste interactúe con el
+                DOM, se debe declarar al archivo JS dentro del
+                apartado <head> del documento HTML.
+                Además, se agrega un atributo en el tag
+                &lt;script>, denominado defer.
+                defer tiene el rol de “esperar” que todo el
+                documento HTML se cargue en el navegador
+                web, para luego recién permitir que el navegador
+                web lea e interprete nuestro código JavaScript.
+                defer
+                De esta forma, nos aseguramos de que todos los
+                tags HTML con los que queremos interactuar,
+                estén previamente representados en pantalla</p>
+                <h3>Metodos de acceso</h3>
+            <p class="meaning">Los tres métodos convencionales y más antiguos
+                que nos permiten acceder a uno o más tags
+                HTML son:
+                ● getElementById(“id”).
+                ● getElementsByTagName(“tag”).
+                ● getElementsByClassName(“tag”).
+                Salvo algunos casos muy puntuales, el acceso a
+                elementos HTML desde JavaScript se realiza,
+                generalmente, de forma individual, directa</p>
+                <img src="./assets/jsteoria20.png" alt="">
+            <p class="meaning">Las tres propiedades más utilizadas para
+                manipular contenido de elementos HTML son:
+                ● innerText.
+                ● textContent.
+                ● innerHTML.
+                Cada una aporta lo suyo y se utiliza para
+                determinados casos específicos.</p>
+            <p class="meaning">innerHTML, a diferencia de las otras propiedades,
+                está pensada para escribir bloques de código
+                HTML desde JS, de forma dinámica. De esta
+                forma, se pueden generar uno o más elementos
+                HTML en bloque, de forma dinámica, mediante el
+                atributo innerHTML para escribirlos en el
+                documento HTML.
+                Además, podremos concatenar (en el HTML que
+                vamos a generar) variables, constantes o arrays
+                JS, para así poder mostrar su valor en el
+                documento HTML. Esto es lo que se denomina: la
+                Web Dinámica.</p>
+                <h3>QuerySelector</h3>
+                <img src="./assets/jsteoria23.png" alt="">
+                <img src="./assets/jsteoria24.png" alt="">
+
+            <p class="meaning">tenemos dos elementos HTML; &lt;h2> y
+                &lt;p>, que utilizan una misma clase CSS, y
+                queremos enlazar con el elemento del tipo <p>
+                que posee la clase CSS color-naranja, el
+                método .querySelector() permite lograrlo. Se
+                especifica, en sus paréntesis, que deseamos
+                enlazar con un tag HTML del tipo p, que contiene
+                la clase CSS .color-naranja.
+                Esta precisión hace que .querySelector() sea
+                más efectivo que .getElementById() y por ello,
+                sea el recomendado actualmente.</p>
+                <h3>Trabajar con múltiples elementos HTML desde JS</h3>
+                <img src="./assets/jsteoria25.png" alt="">
+                <img src="./assets/jsteoria26.png" alt="">
+                <img src="./assets/jsteoria27.png" alt="">
+                <img src="./assets/jsteoria28.png" alt="">
+                <img src="./assets/jsteoria29.png" alt="">
+                <img src="./assets/jsteoria30.png" alt="">
+                <img src="./assets/jsteoria31.png" alt="">
+                <h3>Eventos</h3>
+            <p class="meaning">En una aplicación de software, hablamos de
+                eventos cuando nos referimos a la interacción
+                generada entre el usuario y el software.
+                Eventos en el desarrollo web
+                Y si hablamos de desarrollo web, los eventos que
+                se producen en este terreno, son múltiples:
+                ● Scroll del usuario por la página.
+                ● Clic en botones y puntos de menú.
+                ● Escribir datos en un formulario web.
+                ● Subir o descargar archivos.
+                ● Reproducir audio o video.
+                ● Entre otros.</p>
+                <img src="./assets/jsteoria32.png" alt="">
+                <img src="./assets/jsteoria33.png" alt="">
+                <img src="./assets/jsteoria34.png" alt="">
+                <img src="./assets/jsteoria35.png" alt="">
+                <img src="./assets/jsteoria36.png" alt="">
+                <img src="./assets/jsteoria37.png" alt="">
+                <img src="./assets/jsteoria38.png" alt="">
+                <img src="./assets/jsteoria39.png" alt="">
+                <img src="./assets/jsteoria40.png" alt="">
+                <h3>Funciones Lambda</h3>
+                <img src="./assets/jsteoria41.png" alt="">
+                <img src="./assets/jsteoria42.png" alt="">
+                <h3>Funciones</h3>
+
+            <p class="meaning">En JavaScript, una función es un bloque de
+                código reutilizable que realiza una tarea
+                específica. Puede aceptar entradas, llamadas
+                argumentos, y devuelve un resultado.
+                Es la forma de organizar y estructurar el código
+                para poder usar la misma lógica en diferentes
+                partes de tu programa</p>
+            <p class="meaning">Para definir una función se usa la palabra
+                reservada function, se le da un nombre, se abre y cierra
+                paréntesis ().
+                Luego, se abren llaves de bloque ({), se escribe el
+                cuerpo (el código que queremos ejecutar cuando
+                sea invocada) y, por último, se cierra la llave de
+                bloque (}).</p>
+                <img src="./assets/jsteoria43.png" alt="">
+                <img src="./assets/jsteoria44.png" alt="">
+                <img src="./assets/jsteoria45.png" alt="">
+                <h3>Ámbito de la variable HTML5: Fundamentos Web
+                    (scope)</h3>
+            <p class="meaning">En JS existen variables del tipo global, que se
+                declaran al inicio de toda aplicación web, y que
+                se pueden utilizar libremente, dentro de toda la
+                aplicación.
+                También existen variables del tipo local, que sólo
+                se pueden utilizar dentro de, por ejemplo, una
+                función, o un método, en la aplicación web.
+                A este tipo de usos se lo denomina: ‘scope’</p>
+                <p class="meaning">Cuando se crea una variable de ámbito local,
+                    esta no podrá ser utilizada por fuera del ámbito
+                    donde fue creada.
+                    Si se intenta acceder a su valor, por fuera de
+                    dicho ámbito, obtendremos un error de que la
+                    variable no ha sido definida.</p>
+                <p class="meaning"></p>
+                <p class="meaning"></p>
+                <p class="meaning"></p>
+                <p class="meaning"></p>
+        </section>
+        <hr>
+        <section class="content">
+            <h2 class="subtitle">Modulo 5:</h2>
+            <h3>ECMAScript</h3>
+            <iframe src="./assets/js-t01.pdf" width="100%" height="600px">
+                <p>Tu navegador no soporta iframes.</p>
+            </iframe>
+        </section>
+        &lt;
     </main>
 </body>
 </html>
